@@ -1,7 +1,8 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je, zoals altijd, in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
+# Project stekjesbieb (Buurtcampus Oost)
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+Een pagina waarop buurtbewoners van Amsterdam Oost informatie kunnen vinden over het verzorgen van planten, zodat zij niet steeds nieuwe planten hoeven te kopen en daarmee verspilling tegen gaan.
 
 ## Inhoudsopgave
 
