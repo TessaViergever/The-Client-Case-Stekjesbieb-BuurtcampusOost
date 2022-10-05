@@ -1,18 +1,52 @@
+/* header styling */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr ;
+    grid-template-areas: 
+    "buurtcampus-logo buurtcampus-footer"
+    "stekjesbieb-logo buurtcampus-footer"
+  }
 
-/* eventueel nav menu onder stekjesbieb logo?
-.main-menu {
-    border-bottom: 1px solid black;
+#buurtcampus-logo {
+    margin: 0px auto;
+    max-width: 1000px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    grid-area: buurtcampus-logo;
 }
 
-.main-menu ol {
-    list-style-type: none;
-    padding-left: 0;
+#stekjesbieb-logo {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    grid-area: stekjesbieb-logo;
 }
 
-.main-menu-item {
-    display: inline-block;
+#buurtcampus-footer{
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px;
+    grid-area: buurtcampus-footer;
 }
 
+/*main styling*/
+
+h1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+ /* eventueel nav menu onder stekjesbieb logo?*/
+
+/*.main-menu {border-bottom: 1px solid black;}
+.main-menu ol {list-style-type: none; padding-left: 0;}
+.main-menu-item {display: inline-block;}
 .main-menu-item a::after {
     display: inline-block;
     color: #000;
@@ -20,8 +54,106 @@
     font-size: 80%;
     font-weight: bold;
     padding: 0 3px;
-}
-*/
+}*/
+
+/* buurtbewoner tips carousel */
+
+.carousel-tips-buurtbewoners {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slides-item {
+    align-items: center;
+    border-radius: 1px;
+    display: flex;
+    flex-shrink: 0;
+    font-size: 1rem;
+    height: 600px;
+    justify-content: center;
+    margin: 0 1rem;
+    position: relative;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: transform .5s;
+    width: 100%;
+  }
+  
+  .carousel__nav {
+    padding: 1.25rem .5rem;
+  }
+  
+  .slider-nav {
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    height: 1.5rem;
+    justify-content: center;
+    padding: .5rem;
+    position: relative;
+    text-decoration: none;
+    width: 1.5rem;
+  }
+  
+  .slider-nav:hover,
+  .slider-nav:active {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .slide-1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10%;
+  }
+  
+  .slide-2 {
+    background-color: #bfd;
+  }
+  
+  .slide-3 {
+    background-color: #cdf;
+  }
+  
+  .slide-4 {
+    background-color: #dca;
+  }
+  
+  .slide-5 {
+    background-color: #ffc;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .box-buurtbewoners {
     padding: 10px;

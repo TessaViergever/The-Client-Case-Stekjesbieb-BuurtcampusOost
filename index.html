@@ -8,85 +8,91 @@
   </head>
 
   <body>
-
-    <header>
-        <div class="logo-buurtcampus">
-            <img>
+    <header>  
+        <div id="buurtcampus-logo">
+            <img src="./assets/Buurtcampus Oost-logo.svg" alt="buurtcampus logo">
+        </div>
+        <div id="stekjesbieb-logo">
+            <img src="./assets/stekjesbieb-logo.svg" alt="stekjesbieb logo"></svg>
         </div>
 
-        <div class="logo-stekjesbieb">
-            <img>
+        <div id="buurtcampus-footer">
+            <img src="./assets/BuurtcampusFooter.svg" alt="buurtcampus footer">
         </div>
-
-        <!---eventueel een menu?
-        <nav class="main-menu">
+        
+        <!--in uiteindelijke versie nog een menu in header? -->
+        <!--<nav class="main-menu">
             <ol>
-                <li class="main-menu-item"><a href="#">home</a></li>
-                <li class="main-menu-item"><a href="#">optie1</a></li>
+                <li class="main-menu-item"><a href="#">Home</a></li>
                 <li class="main-menu-item">verzorgingstips planten</li>
             </ol>
-        </nav>
-        -->
-        <div>
-            <h1>Verzorgingstips planten</h1>
-        </div>
-        
-        
-    
-
+        </nav>-->
     </header>
 
     <main>
-
-
-
-     <div class="box-buurtbewoners">
-        <h2>Plant verzorgingstips van buurtbewoners</h2>
-
-        <div>
-            <div>
-                <img alt="" src="">
-                <p>“In de winter sproei ik mijn bananenplant 1x per week” - Anne, 65</p>
-            </div>
-
-            <div>
-                <img alt="" src="">
-                <p>“mijn cactus wil graag veel zonlicht maar weinig water” - Bert, 22</p>
-            </div>
-
-            <div>
-                <img alt="" src="">
-                <p>“Mijn Aloë Vera houd niet een laag water onder in de pot” - Samir, 65</p>
-            </div>
-
-            <div>
-                <img alt="" src="">
-                <p>“Een raam op het noorden wordt mijn monstera super blij van” - Barry, 80</p>
-            </div>
+        <div id="h1-styling">
+            <h1>Informatie plantenverzorging</h1>
         </div>
 
-    </div>
+        <div class="box-buurtbewoners">
+            <h2>Planten verzorgtips van buurtbewoners</h2>
+
+                
+          <!-- carousel met buurtbewoner tip's -->
+            <section class="carousel-tips-buurtbewoners">
+                <div class="slides">
+                    <div class="slides-item slide-1" id="slide-1">
+                        <img alt="" src="">
+                        <p>“In de winter sproei ik mijn bananenplant 1x per week” - Anne, 65</p>
+                    </div>
+                    <div class="slides-item slide-2" id="slide-2">
+                        <img alt="" src="">
+                        <p>“mijn cactus wil graag veel zonlicht maar weinig water” - Bert, 22</p>
+                    </div>
+                    <div class="slides-item slide-3" id="slide-3">
+                        <img alt="" src="">
+                        <p>“Mijn Aloë Vera houd niet een laag water onder in de pot” - Samir, 65</p>
+                    </div>
+                    <div class="slides-item slide-4" id="slide-4">
+                        <img alt="" src="">
+                        <p>“Een raam op het noorden wordt mijn monstera super blij van” - Barry, 80</p>
+                    </div>
+                </div>
+
+                <div class="carousel__nav">
+                    <a class="slider-nav" href="#slide-1">1</a>
+                    <a class="slider-nav" href="#slide-2">2</a>
+                    <a class="slider-nav" href="#slide-3">3</a>
+                    <a class="slider-nav" href="#slide-4">4</a>
+                </div>
+            </section>
+        </div>
+
+    
         
 
-     <div class="box-kom-langs-bij-oba">
-        <div>
-            <h2>Kom langs bij de ObA!</h2>
-            <p>➳ wissel planten verzorgingstips uit met buurtgenoten (di & do 12:00-14:00)</p>
-            <p>➳ volg een workshop plantenverzorging(vrijdag 18 oktober 2022 16:00-17:00)</p>
-        </div>
-    </div>  
+
+        <!-- box: kom langs bij ObA-->
+
+        <div class="box-kom-langs-bij-oba">
+            <div>
+                <h2>Kom langs bij de ObA!</h2>
+                <p>➳ wissel planten verzorgingstips uit met buurtgenoten (di & do 12:00-14:00)</p>
+                <p>➳ volg een workshop plantenverzorging(vrijdag 18 oktober 2022 16:00-17:00)</p>
+            </div>
+        </div>  
          
-    <div class="box-vind-jouw-plant">
-        <div>
-            <h2>Vind jouw plant</h2>
+        <div class="box-vind-jouw-plant">
+            <div>
+                <h2>Vind jouw plant</h2>
+            </div>
+            <div>
+                <p>plantenlijst A t/m Z</p>
+            </div>
+            <div>
+             <p>zoek op naam</p>
+            </div>
         </div>
-        <div>
-            <p>plantenlijst A t/m Z</p>
-        </div>
-        <div>
-            <p>zoek op naam</p>
-        </div>
-    </div>
 
 
 
