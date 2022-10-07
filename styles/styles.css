@@ -72,8 +72,10 @@ h2{
 
   /* media queries breakpoints */
 
+
   @media screen and (min-width: 400px) {
     .carousel-tips-buurtbewoners {
+      /*tijdelijk rood gebruikt om duidelijker te zien of het werkt*/
       background-color: red;
     }
   }
