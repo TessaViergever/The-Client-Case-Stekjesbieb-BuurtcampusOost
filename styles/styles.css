@@ -1,4 +1,4 @@
-/* -------- header styling -------------*/
+/* ------------ start header styling -------------*/
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -43,8 +43,10 @@ header {
     padding: 0 3px;
 }*/
 
+/* ------------ end header styling ----------*/
 
-/*----------------main styling ----------------------*/
+
+/* ------------ start main styling ---------------*/
 h1{
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -55,7 +57,7 @@ h2{
 }
 
 
-/* ------------carousel buurtbewoner tips------------ */
+/* styling "carousel met buurtbewoner tips" */
 
 .carousel-tips-buurtbewoners {
     background-color:rgb(255, 255, 255, 0.5);
@@ -68,6 +70,8 @@ h2{
     text-align: left;
   }
 
+  /* media queries breakpoints */
+
   @media screen and (min-width: 400px) {
     .carousel-tips-buurtbewoners {
       background-color: red;
@@ -75,7 +79,7 @@ h2{
   }
   
 .slides {
-/* display grid? display flex? in .slides of in .slides-item?*/
+/* checken: display grid of display flex? in .slides of in .slides-item?*/
 
   /*display: grid;
     grid-template-rows: 1fr;
@@ -84,8 +88,9 @@ h2{
     "tip-foto-buurtbewoner";
     font-size: 1rem;
     padding: 15px;*/
-    /* ----flexbox nodig of grid?---
-    display: flex;
+
+/* flexbox nodig of grid? */
+  /*display: flex;
     border-radius: 15px;
     margin: 10px;
     overflow: hidden;
@@ -93,7 +98,7 @@ h2{
   }
   
 .slides-item {
-/* ---grid hier nodig of in .slides?---*/
+/* checken: grid in .slides-item of in .slides? */
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -109,32 +114,21 @@ h2{
 
 .slides-item p{
     background-color: rgba(255, 255, 255, 0.5);
-/* ik wil dat margin responsive is met text/screensize*/
     overflow: hidden;
     place-self: start center;
 }
   
 .slides-item img{
-    /* ik wil dat box rondom img randje zichtbaar is*/
+/* nog fixen/navragen: box rondom img zichtbaar? */
     max-width: 100%;
 }
 
+/*  navigatie van carousel, later nodig? */
 
-
-
-
-
-
-
-
-
-
-
-
-/* ---- navigatie van carousel, later nodig?----
-  .carousel__nav {
+/*  .carousel__nav {
     padding: 1.25rem .5rem;
   }
+
     .slider-nav {
     align-items: center;
     background-color: #ddd;
@@ -156,20 +150,19 @@ h2{
 */
 
 
-
-
-
-/* ----- styling section "plant verzorgtips buurtbewoners" -----*/ 
+/* styling "plant verzorgtips buurtbewoners" */ 
 .box-buurtbewoners {
     padding: 10px;
     background-color: rgba(35, 178, 47, 0.5);
-
  }
-/* ----- styling section "kom langs bij ObA" -----*/ 
+
+/*  styling "kom langs bij ObA" */ 
  .box-kom-langs-bij-oba {
     padding: 10px;
  }
-/* ----- styling section "vind jouw plant" -----*/ 
+
+ 
+/* styling "vind jouw plant" */ 
  .box-vind-jouw-plant {
     padding: 10px;
     background-color:rgba(35, 178, 47, 0.5);
