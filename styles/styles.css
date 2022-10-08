@@ -1,11 +1,12 @@
 /* ------------ start header styling -------------*/
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows:0.5fr 0.5fr 1fr;
     grid-template-areas: 
-    "buurtcampus-logo buurtcampus-footer"
-    "stekjesbieb-logo buurtcampus-footer"
+    "buurtcampus-logo"
+    "stekjesbieb-logo" 
+    "buurtcampus-footer"
 }
 
 #buurtcampus-logo {
@@ -19,14 +20,20 @@ header {
 #stekjesbieb-logo {
     max-width: 100%;
     height: auto;
+    place-self: center;
     background-color: rgb(255, 255, 255);
     grid-area: stekjesbieb-logo;
 }
 
-#buurtcampus-footer{
+#buurtcampus-footer {
     max-width: 100%;
+    height: auto;
+    place-self: center;
     background-color: rgb(255, 255, 255);
     grid-area: buurtcampus-footer;
+}
+#buurtcampus-footer > img {
+  max-width: 100%;
 }
 
 /* eventueel nav menu onder stekjesbieb logo?*/
