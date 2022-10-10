@@ -1,163 +1,108 @@
-/* ------------ start header styling -------------*/
+/* header styling */
 header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:0.5fr 0.5fr 1fr;
-    grid-template-areas: 
-    "buurtcampus-logo"
-    "stekjesbieb-logo" 
-    "buurtcampus-footer"
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr ;
+  grid-template-areas:
+  "logo-buurtcampus-plantswap" 
 }
-
-#buurtcampus-logo {
-    max-width: 100%;
-    height: auto;
-    place-self: center;
-    background-color: rgb(255, 255, 255);
-    grid-area: buurtcampus-logo;
-}
-
-#stekjesbieb-logo {
-    max-width: 100%;
-    height: auto;
-    place-self: center;
-    background-color: rgb(255, 255, 255);
-    grid-area: stekjesbieb-logo;
-}
-
-#buurtcampus-footer {
-    max-width: 100%;
-    height: auto;
-    place-self: center;
-    background-color: rgb(255, 255, 255);
-    grid-area: buurtcampus-footer;
-}
-#buurtcampus-footer > img {
+header>img{
   max-width: 100%;
+  height: auto;
+  place-self: center;
+  background-color: rgb(255, 255, 255);
+  grid-area: logo-buurtcampus-plantswap;
 }
 
-/* eventueel nav menu onder stekjesbieb logo?*/
-
-/*.main-menu {border-bottom: 1px solid black;}
-.main-menu ol {list-style-type: none; padding-left: 0;}
-.main-menu-item {display: inline-block;}
-.main-menu-item a::after {
-    display: inline-block;
-    color: #000;
-    content: '>';
-    font-size: 80%;
-    font-weight: bold;
-    padding: 0 3px;
-}*/
-
-/* ------------ end header styling ----------*/
-
-
-/* ------------ start main styling ---------------*/
+/* main styling */
 h1{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
+  color: rgb(49, 39, 113);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
 }
+
+/* styling box buurtbewoners*/
+
+.box-buurtbewoners {
+  padding: 10px;
+  background-color: rgba(35, 178, 47, 0.5);
+  }
 
 h2{
-    text-align: center;
-}
-
-
-/* styling "carousel met buurtbewoner tips" */
+  text-align: center;
+  }
 
 .carousel-tips-buurtbewoners {
-    background-color:rgb(255, 255, 255, 0.5);
-    border-radius: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    text-align: left;
+  background-color:rgb(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  overflow: scroll;
   }
 
-  /* media queries breakpoints */
-
-
-  @media screen and (min-width: 400px) {
-    .carousel-tips-buurtbewoners {
-      /*tijdelijk rood gebruikt om duidelijker te zien of het werkt*/
-      background-color: red;
-    }
-  }
-  
 .slides {
-/* checken: display grid of display flex? in .slides of in .slides-item?*/
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-inline-start: 0;  
+  width: 60rem; 
+}
 
-  /*display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "tip-foto-buurtbewoner";
-    font-size: 1rem;
-    padding: 15px;*/
-
-/* flexbox nodig of grid? */
-  /*display: flex;
-    border-radius: 15px;
-    margin: 10px;
-    overflow: hidden;
-    text-align: left;*/
-  }
-  
-.slides-item {
-/* checken: grid in .slides-item of in .slides? */
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "tip-foto-buurtbewoner";
-    font-size: 1rem;
-    padding: 15px;
-  }
+.slides-item {/* checken: welke info in .slides-item of .slides */
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "tip-foto-buurtbewoner";
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 1rem;   
+  padding: 15px;
+  text-align: left;
+}
 
 .slides-item p, .slides-item img{
-    grid-area: tip-foto-buurtbewoner;
+  grid-area: tip-foto-buurtbewoner;
 }
 
 .slides-item p{
-    background-color: rgba(255, 255, 255, 0.5);
-    overflow: hidden;
-    place-self: start center;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  place-self: start center;
+  border-radius: 10px;
+  padding: 5%;
 }
-  
+
 .slides-item img{
-/* nog fixen/navragen: box rondom img zichtbaar? */
-    max-width: 100%;
+  border-radius: 10px;
+  max-width: 100%;
 }
 
-/*  navigatie van carousel, later nodig? */
+/* footer styling */
+footer img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+  background-color: rgb(255, 255, 255); 
+}
 
-/*  .carousel__nav {
-    padding: 1.25rem .5rem;
-  }
 
-    .slider-nav {
-    align-items: center;
-    background-color: #ddd;
-    border-radius: 50%;
-    color: #000;
-    display: inline-flex;
-    height: 1.5rem;
-    justify-content: center;
-    padding: .5rem;
-    position: relative;
-    text-decoration: none;
-    width: 1.5rem;
-  }
-    .slider-nav:hover,
-  .slider-nav:active {
-    background-color: #000;
-    color: #fff;
-  }
-*/
+/* media queries voor breakpoints */
 
+@media screen and (min-width: 400px) {
+  .carousel-tips-buurtbewoners {
+    background-color: red; /*tijdelijke kleur als voorbeeld*/
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .carousel-tips-buurtbewoners {
+    background-color: rgb(255, 0, 242);/*tijdelijke kleur als voorbeeld*/
+  }
+}
 
 /* styling "plant verzorgtips buurtbewoners" */ 
 .box-buurtbewoners {
